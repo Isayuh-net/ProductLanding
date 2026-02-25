@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     background-color: #30364F;
@@ -44,4 +44,26 @@ header {
 .carousel-wrapper {
     width: 60%;          /* controls overall carousel width */
     margin: 50px auto;   /* centers horizontally */
+}
+
+
+.features{
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    font-size: large;
+
+}
+
+ul.MyUl{
+   display: inline-block;
+   text-align: left;
+}
+
+h4,h2{
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+    color: white;
+    margin-top: 20px;
+    padding-top: 30px;
+    text-align: center;
 }
