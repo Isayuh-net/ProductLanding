@@ -1,69 +1,154 @@
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Global */
 body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     background-color: #30364F;
-}
-
-header {
-    background-color: #333;
     color: white;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
 }
 
-/* Horizontal Nav */
+/* Header */
+header {
+    background-color: #222;
+    padding: 20px;
+}
+
 #nav-bar {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .nav-link {
     margin: 0 15px;
-    font-size: medium;
     color: white;
     text-decoration: none;
+    transition: 0.3s;
 }
 
-/* Title & Description */
+.nav-link:hover {
+    color: #d4af37;
+}
+
+/* Home */
 #title {
     text-align: center;
-    margin: 50px 0;
-    color: white;
+    margin-top: 60px;
 }
 
 #description {
     text-align: center;
-    margin: 20px 0;
-    color: white;
+    margin-bottom: 40px;
 }
 
-/* Center & Resize Carousel */
-.carousel-wrapper {
-    width: 60%;          /* controls overall carousel width */
-    margin: 50px auto;   /* centers horizontally */
-}
-
-
-.features{
-    color: white;
-    padding: 50px 20px;
+/* Features */
+.features {
+    padding: 60px 20px;
     text-align: center;
-    font-size: large;
-
 }
 
-ul.MyUl{
+.feature-description {
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+ul.MyUl {
    display: inline-block;
    text-align: left;
 }
 
-h4,h2{
-    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
-    color: white;
-    margin-top: 20px;
-    padding-top: 30px;
+h2, h4 {
+    font-family: Copperplate, fantasy;
+    margin-top: 40px;
+}
+
+/* Image Hover Animation */
+.features img {
+    border-radius: 12px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.features img:hover {
+    transform: scale(1.07);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+}
+
+/* Pricing */
+.pricing-section {
+    padding: 70px 20px;
     text-align: center;
+    background-color: #262b40;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.price-card {
+    background-color: #1e2233;
+    padding: 30px;
+    border-radius: 12px;
+    width: 280px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.price-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.6);
+}
+
+.price-card button {
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.price-card button:hover {
+    background-color: #d4af37;
+    color: black;
+}
+
+/* Contact */
+.contact-section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+}
+
+.contact-form button {
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #d4af37;
+    color: black;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
 }
